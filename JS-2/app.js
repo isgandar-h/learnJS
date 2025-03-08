@@ -3,18 +3,27 @@
 // 1. Global Scope
 // 2. Function Scope
 // 3. Block Scope
-// 4. Lexical Scope
-// 5. Module Scope
-// 6. Lexical Environment
-// 7. Scope Chain
-// 8. Hoisting
-// 9. Closure
-// 10. Garbage Collection
-// 11. Memory Leak
-// 12. Temporal Dead Zone
-// 13. Call Stack
-// 14. Event Loop
-// 15. Web API
-// 16. Callback Queue
-// 17. Microtask Queue
-// 18. Render Queue
+
+
+// Global Scope - her yerden elcatnaliq var
+var a = 1;
+let b = 2;
+const c = 3;
+console.log('Global Scope: ', a, b, c);
+
+// Function Scope - yalnizca funksiyadan elcatnaliq var
+function test() {
+    var a = 4;
+    let b = 5;
+    const c = 6;
+    console.log('Function Scope: ', a, b, c);
+}
+test();
+
+// Block Scope - yalnizca blockdan elcatnaliq var
+if (true) {
+    var a = 7;
+    let b = 8;
+    const c = 9;
+    console.log('Block Scope: ', a, b, c);
+}
