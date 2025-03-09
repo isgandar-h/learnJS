@@ -17,5 +17,5 @@ let myObject = {};
 let myFunction = function() {};
 
 
-let test = ;
-console.log(typeof test);
+let test = 123;
+console.log(typeof myBoolean);
